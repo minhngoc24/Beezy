@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Beezy",
+    "version": "1.0",
+    "description": "Stay Beezy. Stay Focused.",
+    "icons": {
+        "16": "icons.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
