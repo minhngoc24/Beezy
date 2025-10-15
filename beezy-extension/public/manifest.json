@@ -4,19 +4,29 @@
   "version": "1.0",
   "description": "Stay Beezy. Stay Focused.",
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "logo.jpg",
+    "48": "logo.jpg",
+    "128": "logo.jpg"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_title": "Beezy",
+    "default_popup": "index.html",
     "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    },
-    "default_title": "Beezy"
+      "16": "logo.jpg",
+      "48": "logo.jpg",
+      "128": "logo.jpg"
+    }
   },
   "permissions": ["storage", "tabs", "scripting", "alarms"],
-  "host_permissions": ["<all_urls>"]
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["beezy.js"],
+      "css": ["beezy.css"]
+    }
+  ]
 }
