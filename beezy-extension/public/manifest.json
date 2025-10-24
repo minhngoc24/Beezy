@@ -17,7 +17,12 @@
       "128": "logo.jpg"
     }
   },
-  "permissions": ["storage", "tabs", "scripting", "alarms"],
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "alarms"
+  ],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
